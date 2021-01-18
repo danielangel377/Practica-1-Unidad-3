@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/paleta"
+    >
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:lineSpacingExtra="60sp"
+            android:text="         Bienvenido "
+            android:textAllCaps="true"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:fontFamily="cursive"
+            android:lineSpacingExtra="36sp"
+            android:text="         Menu Principal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="italic"
+            android:typeface="monospace" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:layout_weight="1"
+                android:background="@drawable/recargar"
+                android:onClick="actualizar"
+                android:text="Actualizar"
+                app:backgroundTint="@color/design_default_color_on_secondary" />
+
+            <Button
+                android:onClick="consulta"
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:layout_weight="1"
+                android:background="@drawable/busqueda"
+                android:fontFamily="sans-serif"
+                android:text="Consultar Productos"
+                android:textStyle="bold"
+                app:backgroundTint="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="259dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:onClick="cargar"
+
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:layout_weight="1"
+                android:background="@drawable/cargar"
+                android:text="Cargar Producto"
+                app:backgroundTint="@color/black" />
+
+            <Button
+                android:id="@+id/button9"
+                android:onClick="eliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:layout_weight="1"
+                android:background="@drawable/eliminar"
+                android:text="Eliminar Producto"
+                app:backgroundTint="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
