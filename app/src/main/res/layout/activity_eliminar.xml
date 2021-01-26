@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -30,7 +30,7 @@
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/id"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:ems="10"
@@ -39,9 +39,10 @@
             android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
-        <EditText
 
-            android:id="@+id/editTextTextPersonName"
+        <EditText
+            android:id="@+id/Nombre"
+            android:enabled="false"
             android:layout_width="match_parent"
             android:layout_height="73dp"
             android:ems="10"
@@ -51,7 +52,9 @@
             android:textColor="@color/white" />
 
         <EditText
-            android:id="@+id/editTextNumberSigned"
+            android:id="@+id/Precio"
+
+            android:enabled="false"
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:ems="10"
@@ -62,6 +65,8 @@
 
             />
         <EditText
+            android:enabled="false"
+            android:id="@+id/Piezas"
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:ems="10"
@@ -73,6 +78,8 @@
             />
 
         <EditText
+            android:id="@+id/desc"
+            android:enabled="false"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:ems="10"
@@ -88,6 +95,7 @@
 
 
             <Button
+                android:onClick="buscar"
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -100,6 +108,7 @@
                 app:backgroundTint="@color/black" />
 
             <Button
+                android:onClick="borrar"
                 android:id="@+id/button5"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -113,4 +122,4 @@
 
         </LinearLayout>
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

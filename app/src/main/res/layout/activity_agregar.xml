@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Agregar"
     android:background="@drawable/paleta">
+
     <LinearLayout
 
-        android:layout_width="match_parent"
+        android:layout_width="412dp"
         android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,14 +36,14 @@
             android:background="@color/white"
             android:fontFamily="cursive"
             android:lineSpacingExtra="60sp"
-            android:text="              Buscar "
+            android:text="              Registrar "
             android:textAllCaps="true"
             android:textSize="36sp"
             android:textStyle="bold"
             android:typeface="monospace" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/id"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:ems="10"
@@ -41,19 +54,17 @@
 
         <EditText
 
-            android:id="@+id/editTextTextPersonName"
-            android:enabled="false"
+            android:id="@+id/Nombre"
             android:layout_width="match_parent"
             android:layout_height="73dp"
             android:ems="10"
-            android:inputType="textPersonName"
             android:hint="Nombre Producto"
-            android:textColorHint="@color/white"
-            android:textColor="@color/white" />
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
         <EditText
-            android:enabled="false"
-            android:id="@+id/editTextNumberSigned"
+            android:id="@+id/Precio"
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:ems="10"
@@ -63,8 +74,9 @@
             android:textColorHint="@color/white"
 
             />
+
         <EditText
-            android:enabled="false"
+            android:id="@+id/Piezas"
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:ems="10"
@@ -76,7 +88,7 @@
             />
 
         <EditText
-            android:enabled="false"
+            android:id="@+id/desc"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:ems="10"
@@ -92,6 +104,7 @@
 
 
             <Button
+                android:onClick="Cargar"
                 android:id="@+id/button4"
                 android:layout_width="264dp"
                 android:layout_height="162dp"
@@ -105,4 +118,4 @@
 
         </LinearLayout>
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
